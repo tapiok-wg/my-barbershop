@@ -1,0 +1,67 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  @include min-tablet {
+    flex-direction: row;
+    gap: 30px;
+  }
+  &__main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @include min-tablet {
+      gap: 30px;
+    }
+    @include min-desktop {
+      width: 470px;
+    }
+    & .subtitle {
+      margin-bottom: 0;
+    }
+    & .btn {
+      margin-top: 20px;
+      @include min-tablet {
+        margin-top: 53px;
+      }
+      @include min-desktop {
+        margin-top: 43px;
+      }
+    }
+  }
+  &__images {
+    display: none;
+    @include min-tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    @include min-desktop {
+      flex-direction: row;
+    }
+  }
+
+  &__img {
+    width: 330px;
+    @include min-desktop {
+      width: 270px;
+      height: 445px;
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    max-width: 306px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  &__sub-text {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}

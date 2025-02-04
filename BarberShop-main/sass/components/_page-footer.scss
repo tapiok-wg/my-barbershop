@@ -1,0 +1,41 @@
+.footer {
+  background-color: #f7f7f7;
+  & .container {
+    padding-top: 42px;
+    padding-bottom: 42px;
+    @include min-tablet {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+      padding: 56px 31px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 270px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    @include min-tablet {
+      margin: 0;
+    }
+  }
+  &__link {
+    font-size: 11px;
+    font-weight: 600;
+    &:hover {
+      color: $subColor;
+    }
+    &:focus {
+      color: $subColor;
+    }
+  }
+  &__copyright {
+    color: $textColor;
+    font-size: 11px;
+    font-weight: 600;
+  }
+}

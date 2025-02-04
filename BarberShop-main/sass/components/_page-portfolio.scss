@@ -1,0 +1,25 @@
+.portfolio {
+  & .subtitle {
+    margin-bottom: 71px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    @include min-tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+  &__image {
+    width: 100%;
+    @include min-tablet {
+      width: 330px;
+    }
+    @include min-desktop {
+      width: 270px;
+      height: 360px;
+      object-fit: cover;
+    }
+  }
+}

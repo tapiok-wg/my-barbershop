@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BarberShop</title>
+    <link rel="icon" type="image/svg+xml" href="images/razor-hair-salon-tool-svgrepo-com.svg" />
+    
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header border">
+      <div class="container">
+        <div class="header__mobile">
+          <a class="header__logo" href="index.html" rel="noreferrer noopener">
+            <svg class="logo">
+              <use href="./images/logo-barberShop.svg#icon-logo-barberShop"></use>
+            </svg>
+          </a>
+          <button class="header__mobile-btn">
+            <svg class="header__mobile-btn-icon">
+              <use href="./images/logo-barberShop.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="backdrop is-hidden">
+            <div class="container">
+              <div class="header__modal is-hidden">
+                <button class="header__modal-btn">
+                  <svg class="header__modal-btn-icon">
+                    <use href="./images/logo-barberShop.svg#icon-cross"></use>
+                  </svg>
+                </button>
+                <nav class="header__modal-nav">
+                  <ul class="header__modal-list">
+                    <li class="header__modal-item">
+                      <a class="mobile-link" href="#about">About</a>
+                    </li>
+                    <li class="header__modal-item">
+                      <a class="mobile-link" href="#services">Services and prices</a>
+                    </li>
+                    <li class="header__modal-item">
+                      <a class="mobile-link" href="#barbers">Barbers</a>
+                    </li>
+                    <li class="header__modal-item">
+                      <a class="mobile-link" href="#contacts">Contacts</a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="header__modal-booking">
+                  <a class="mobile-link" href="tel:+38 044 111 11 11">+996 500 14 16 06</a>
+                  <a class="btn" href="#booking">Онлайн запись</a>
+                </div>
+
+                <ul class="header__modal-footer">
+                  <li><span class="section-line"></span></li>
+                  <li><a class="header__modal-link" href="#">Instagram</a></li>
+                  <li><a class="header__modal-link" href="#">Youtube</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="hero" class="hero border container">
+        <div class="hero__sidebar">
+          <ul class="hero__sidebar-list">
+            <li class="hero__sidebar-item">
+              <span class="hero__sidebar-link hero__sidebar-link--line section-line"></span>
+            </li>
+            <li class="hero__sidebar-item">
+              <a
+                class="hero__sidebar-link"
+                href="https://www.instagram.com/ax1shka.ezz/"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+                >Instagram</a
+              >
+            </li>
+            <li class="hero__sidebar-item">
+              <a
+                class="hero__sidebar-link"
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+                >Youtube</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="hero__content">
+          <div class="hero__navigation">
+            <nav class="hero__nav">
+              <ul class="hero__nav-list">
+                <li class="hero__nav-item">
+                  <a class="hero__nav-link" href="#about">О нас</a>
+                </li>
+                <li class="hero__nav-item">
+                  <a class="hero__nav-link" href="#services">Услуги и Цены</a>
+                </li>
+                <li class="hero__nav-item">
+                  <a class="hero__nav-link" href="#barbers">Барберы</a>
+                </li>
+                <li class="hero__nav-item">
+                  <a class="hero__nav-link" href="#contacts">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="hero__nav-aside">
+              <a class="hero__nav-link" href="tel:+38 044 111 11 11">+996 500 14 16 06</a>
+              <a class="btn btn--light" href="#booking">Онлайн запись</a>
+            </div>
+          </div>
+          <div class="hero__discription-wrap">
+            <div class="hero__discription">
+              <p class="hero__subtitle subtitle">
+                <span class="section-line section-line--light"></span> Парикмахерская для мужчин в Караколе
+              </p>
+              <h1 class="hero__title">BarberShop XAN</h1>
+              <p class="hero__text">
+                Мы являемся экспертами в области модных мужских стрижек. Мы работаем быстро, аккуратно и стильно.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about border container">
+        <ul class="about__images">
+          <li>
+            <img
+              class="about__img"
+              srcset="./images/about/about1-mob.jpg 1x, ./images/about/about1-mob@2x.jpg 2x"
+              src="./images/about/about1-mob.jpg"
+              alt="Beard shave"
+            />
+          </li>
+          <li>
+            <img
+              class="about__img"
+              srcset="./images/about/about2-mob.jpg 1x, ./images/about/about2-mob@2x.jpg 2x"
+              src="./images/about/about2-mob.jpg"
+              alt="Hair cut"
+            />
+          </li>
+        </ul>
+        <div class="about__main">
+          <p class="subtitle"><span class="section-line"></span> О нас</p>
+          <h2 class="about__title">Лучшая парикмахерская в вашем городе</h2>
+          <p class="about__text">
+            Если вы хотите придать своему образу больше уверенности, вам обязательно стоит посетить нас.
+          </p>
+          <p class="about__sub-text">
+            Мы — команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда вы попадаете в руки нашего мастера, 
+            вы уже никогда не будете прежними. Мы — команда, которая всегда «на одной волне» с
+             клиентами. Поэтому мы всегда готовы улучшить каждого, кто к нам обращается!
+          </p>
+          <a class="btn" href="#booking">Онлайн запись</a>
+        </div>
+      </section>
+      <section id="services" class="services border">
+        <div class="services__wrapper">
+          <div class="container">Лучшие барберы в Караколе
+            <p class="subtitle">
+              <span class="section-line section-line--light"></span> 
+            </p>
+            <h2 class="services__title">Услуги и Цены</h2>
+            <ul class="services__price-list">
+              <li class="services__price-item">
+                <p>Мужская стрижка</p>
+<span class="line"></span>
+<p>от 300 сом.</p>
+</li>
+<li class="services__price-item">
+  <p>Подравнивание бороды</p>
+  <span class="line"></span>
+  <p>от 200 сом.</p>
+</li>
+<li class="services__price-item">
+  <p>Подравнивание усов</p>
+  <span class="line"></span>
+  <p>от 200 сом.</p>
+</li>
+<li class="services__price-item">
+  <p>Бритьё опасной бритвой</p>
+  <span class="line"></span>
+  <p>от 200 сом.</p>
+</li>
+<li class="services__price-item">
+  <p>Стрижка у стажёра</p>
+  <span class="line"></span>
+  <p>от 50 сом.</p>
+</li>
+<li class="services__price-item">
+  <p>Стрижка под насадку</p>
+  <span class="line"></span>
+  <p>от 200 сом.</p>
+</li>
+<li class="services__price-item">
+  <p>Детская стрижка (0-12 лет)</p>
+  <span class="line"></span>
+  <p>от 300 сом.</p>
+</li>
+<li class="services__price-item">
+  <p>Камуфляж седины</p>
+  <span class="line"></span>
+  <p>от 200 сом.</p>
+</li>
+</ul>
+<div class="services__price-desktop">
+  <ul class="services__price-list">
+    <li class="services__price-item">
+      <p>Мужская стрижка</p>
+      <span class="line"></span>
+      <p>от 300 сом.</p>
+    </li>
+    <li class="services__price-item">
+      <p>Подравнивание бороды</p>
+      <span class="line"></span>
+      <p>от 200 сом.</p>
+    </li>
+    <li class="services__price-item">
+      <p>Подравнивание усов</p>
+      <span class="line"></span>
+      <p>от 200 сом.</p>
+    </li>
+    <li class="services__price-item">
+      <p>Бритьё опасной бритвой</p>
+      <span class="line"></span>
+      <p>от 200 сом.</p>
+    </li>
+  </ul>
+  <ul class="services__price-list">
+    <li class="services__price-item">
+      <p>Стрижка у стажёра</p>
+      <span class="line"></span>
+      <p>от 50 сом.</p>
+    </li>
+    <li class="services__price-item">
+      <p>Стрижка под насадку</p>
+      <span class="line"></span>
+      <p>от 200 сом.</p>
+    </li>
+    <li class="services__price-item">
+      <p>Детская стрижка (0-12 лет)</p>
+      <span class="line"></span>
+      <p>от 300 сом.</p>
+    </li>
+    <li class="services__price-item">
+      <p>Камуфляж седины</p>
+      <span class="line"></span>
+      <p>от 200 сом.</p>
+    </li>
+                </li>
+              </ul>
+              <ul class="services__price-list">
+                <li class="services__price-item">
+                  <p>Стрижка у стажёра</p>
+                  <span class="line"></span>
+                  <p>от 50 сом.</p>
+                  </li>
+                  <li class="services__price-item">
+                    <p>Стрижка под насадку</p>
+                    <span class="line"></span>
+                    <p>от 200 сом.</p>
+                  </li>
+                  <li class="services__price-item">
+                    <p>Детская стрижка (0-12 лет)</p>
+                    <span class="line"></span>
+                    <p>от 300 сом.</p>
+                  </li>
+                  <li class="services__price-item">
+                    <p>Камуфляж седины</p>
+                    <span class="line"></span>
+                    <p>от 200 сом.</p>
+                  </li>                  
+                </li>
+              </ul>
+            </div>
+            <a class="btn btn--light" href="#booking">Онлайн запись</a>
+          </div>
+        </div>
+      </section>
+      <section id="why" class="why border container">
+        <div class="why__wrap">
+          <p class="subtitle"><span class="section-line"></span> Старая традиционная школа</p>
+<h2 class="why__title">Почему люди приходят к нам?</h2>
+<p class="why__text">
+  О нас говорят только хорошее. Но лучше один раз увидеть и почувствовать, чем десять раз прочитать.
+</p>
+</div>
+<ul class="why__list">
+  <li class="why__item">
+    <p class="why__item-number">600<span>+</span></p>
+    <p class="why__item-text">Довольных клиентов в день</p>
+  </li>
+  <li class="why__item">
+    <p class="why__item-number">50<span>+</span></p>
+    <p class="why__item-text">Награды за отличное обслуживание</p>
+  </li>
+  <li class="why__item">
+    <p class="why__item-number">20<span>+</span></p>
+    <p class="why__item-text">Лучшие барберы Каракола</p>
+  </li>
+  <li class="why__item">
+    <p class="why__item-number">100<span>+</span></p>
+    <p class="why__item-text">Подарки для постоянных клиентов</p>
+  </li>
+</ul>
+
+          </li>
+        </ul>
+      </section>
+      <section id="barbers" class="barbers border">
+        <div class="container">
+          <p class="subtitle">
+            <span class="section-line"></span>For true enjoyers of the atmosphere
+          </p>
+          <h2 class="barbers__title">Our barbers</h2>
+          <ul class="barbers__list">
+            <li class="barbers__prifile">
+              <img
+                class="barbers__prifile-image"
+                src="./images/barbers/barber-1.jpg"
+                alt="Barber"
+              />
+              <h3 class="barbers__prifile-name">John Smith</h3>
+              <p class="barbers__prifile-position">Extreme Barber</p>
+              <ul class="sosial-list">
+                <li class="sosial-item">
+                  <a href="https://www.instagram.com/ax1shka.ezz/">
+                    <svg class="sosial-icon">
+                      <use href="./images/soc.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="sosial-item">
+                  <a href="">
+                    <svg class="sosial-icon">
+                      <use href="./images/soc.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="sosial-item">
+                  <a href="">
+                    <svg class="sosial-icon">
+                      <use href="./images/soc.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="sosial-item">
+                  <a href="">
+                    <svg class="sosial-icon">
+                      <use href="./images/soc.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="barbers__prifile">
+              <img
+                class="barbers__prifile-image"
+                src="./images/barbers/barber-2.jpg"
+                alt="Barber"
+              />
+              <h3 class="barbers__prifile-name">Michele Doe</h3>
+              <p class="barbers__prifile-position">Extreme Barber</p>
+              <ul class="sosial-list">
+                <li class="sosial-item">
+                  <a href="">
+                    <svg class="sosial-icon">
+                      <use href="./images/soc.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="sosial-item">
+                  <a href="">
+                    <svg class="sosial-icon">
+                      <use href="./images/soc.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="sosial-item">
+                  <a href="">
+                    <svg class="sosial-icon">
+                      <use href="./images/soc.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="sosial-item">
+                  <a href="">
+                    <svg class="sosial-icon">
+                      <use href="./images/soc.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="barbers__prifile">
+              <img
+                class="barbers__prifile-image"
+                src="./images/barbers/barber-3.jpg"
+                alt="Barber"
+              />
+              <h3 class="barbers__prifile-name">Alan Black</h3>
+              <p class="barbers__prifile-position">Extreme Barber</p>
+              <ul class="sosial-list">
+                <li class="sosial-item">
+                  <a href="">
+                    <svg class="sosial-icon">
+                      <use href="./images/soc.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="sosial-item">
+                  <a href="">
+                    <svg class="sosial-icon">
+                      <use href="./images/soc.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="sosial-item">
+                  <a href="">
+                    <svg class="sosial-icon">
+                      <use href="./images/soc.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="sosial-item">
+                  <a href="">
+                    <svg class="sosial-icon">
+                      <use href="./images/soc.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="portfolio" class="portfolio border container">
+        <p class="subtitle"><span class="section-line"></span>In Latin, "barba" means "beard"</p>
+        <ul class="portfolio__list">
+          <li class="portfolio__item">
+            <img
+              class="portfolio__image"
+              srcset="
+                ./images/portfolio/Rectangle26.jpg    1x,
+                ./images/portfolio/Rectangle26@x2.jpg 2x
+              "
+              src="./images/portfolio/Rectangle26.jpg"
+              alt="Barber in work"
+            />
+          </li>
+          <li class="portfolio__item">
+            <img
+              class="portfolio__image"
+              srcset="
+                ./images/portfolio/Rectangle25.jpg    1x,
+                ./images/portfolio/Rectangle25@x2.jpg 2x
+              "
+              src="./images/portfolio/Rectangle25.jpg"
+              alt="Barber in work"
+            />
+          </li>
+          <li class="portfolio__item">
+            <img
+              class="portfolio__image"
+              srcset="
+                ./images/portfolio/Rectangle27.jpg    1x,
+                ./images/portfolio/Rectangle27@x2.jpg 2x
+              "
+              src="./images/portfolio/Rectangle27.jpg"
+              alt="Barber in work"
+            />
+          </li>
+          <li class="portfolio__item">
+            <img
+              class="portfolio__image"
+              srcset="
+                ./images/portfolio/Rectangle28.jpg    1x,
+                ./images/portfolio/Rectangle28@x2.jpg 2x
+              "
+              src="./images/portfolio/Rectangle28.jpg"
+              alt="Barber in work"
+            />
+          </li>
+        </ul>
+      </section>
+      <section id="booking" class="booking border">
+        <div class="container">
+          <h3 class="booking__title">Онлайн-Запись</h3>
+          <form class="booking__form" id="bookingForm">
+						<input class="booking__field" type="text" name="name" placeholder="NAME*" required />
+						<input
+							class="booking__field"
+							type="tel"
+							name="phone"
+							placeholder="PHONE*"
+							pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+							required
+						/>
+						<textarea
+							class="booking__message booking__field"
+							name="message"
+							placeholder="MESSAGE"
+							id="message"
+						></textarea>
+						<button class="btn btn--light" type="submit">Отправить</button>
+					</form>
+        </div>
+        <div id="contacts" class="contacts">
+          <div class="contacts__wrapper">
+            <div class="container">
+              <h3 class="contacts__title">Контакты</h3>
+              <div class="contacts__info">
+                <ul class="contacts__list">
+                  <li class="contacts__item">
+                    <p class="contacts__text contacts__text--bold">
+                      Алыбакова 173
+                    </p>
+                  </li>
+                  <li class="contacts__item">
+                    <a class="contacts__text" href="tel:+38 044 111 11 11">+996 500 14 16 06</a>
+                  </li>
+                  <li class="contacts__item">
+                    <a class="contacts__text contacts__link" href="mailto:barbershop@email.com"
+                      >barbershop@email.com</a
+                    >
+                  </li>
+                </ul>
+
+                <div class="contacts__working">
+                  <p class="subtitle">
+                    <span class="section-line section-line--light"></span>Время Работы
+                  </p>
+                  <p class="contacts__text">«Каждый день с 9:00 до 22:00»</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="footer border">
+      <div class="container">
+        <ul class="footer__list">
+          <li><span class="section-line footer__link"></span></li>
+          <li><a class="footer__link" href="#">Instagram</a></li>
+          <li><a class="footer__link" href="#">Youtube</a></li>
+        </ul>
+        
+      </div>
+    </footer>
+  </body>
+  <script src="./js/index.js"></script>
+</html>

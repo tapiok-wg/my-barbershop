@@ -1,0 +1,148 @@
+.hero {
+  display: flex;
+  gap: 30px;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  &__sidebar {
+    display: none;
+    @include min-tablet {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 87px;
+      padding-bottom: 60px;
+
+      &-list {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 40px;
+      }
+      &-link {
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        &--line {
+          transform: rotate(90deg);
+          margin-top: 30px;
+        }
+        &:hover {
+          color: $subColor;
+        }
+        &:focus {
+          color: $subColor;
+        }
+      }
+    }
+  }
+  &__content {
+    height: 580px;
+    width: 100%;
+    color: #fff;
+    background-image: url('../images/slider-3.jpg'), url('../images/slider-1.jpg'),
+      url('../images/slider-2.jpg');
+    background-size: cover;
+    background-position: right;
+    padding: 31px;
+    padding-right: 0;
+    transition: background-image 750ms $speed;
+
+    @include min-tablet {
+      background-position: center;
+      width: 100%;
+      z-index: 700;
+    }
+    @include min-desktop {
+      padding: 31px;
+      padding-left: 100px;
+    }
+  }
+  &__navigation {
+    display: none;
+    @include min-tablet {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+  }
+  &__nav {
+    &-list {
+      display: flex;
+      gap: 20px;
+    }
+    &-link {
+      &:hover {
+        color: $subColor;
+      }
+      &:focus {
+        color: $subColor;
+      }
+    }
+    &-aside {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 20px;
+      @include min-desktop {
+        flex-direction: row;
+      }
+    }
+  }
+  &__discription {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+
+    max-width: 330px;
+
+    &-wrap {
+      margin-top: 156px;
+      @include min-tablet {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 98px;
+      }
+      @include min-desktop {
+        margin-left: 0;
+      }
+    }
+  }
+  &__subtitle {
+    color: $textColorInherit;
+    letter-spacing: 0.09em;
+    margin-bottom: 0;
+  }
+  &__text {
+    color: $textColor;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+    @media screen and (min-width: 350px) {
+      font-size: 48px;
+    }
+  }
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 43px;
+  width: 18px;
+
+  &__btn {
+    display: block;
+    width: 12px;
+    height: 1px;
+    border-radius: 30px;
+    background-color: #fff;
+    &:hover {
+      width: 18px;
+    }
+  }
+}

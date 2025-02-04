@@ -1,0 +1,68 @@
+.contacts {
+  color: $textColor;
+  background-image: url('../images/contacts-bg.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  & .container {
+    @include min-desktop {
+      padding-left: 105px;
+    }
+  }
+  & .subtitle {
+    color: #fff;
+  }
+  &__wrapper {
+    opacity: 90%;
+    background-color: #191c26;
+    height: 100%;
+  }
+  &__title {
+    color: #fff;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    margin-bottom: 40px;
+    @include min-tablet {
+      text-align: start;
+    }
+  }
+  &__info {
+    @include min-tablet {
+      display: flex;
+      gap: 30px;
+    }
+    @include min-desktop {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+  &__list {
+    margin-bottom: 44px;
+    @include min-tablet {
+      width: 330px;
+    }
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &__link {
+    text-decoration: underline;
+  }
+  &__text {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    &--bold {
+      font-weight: 700;
+      @include min-tablet {
+        width: 290px;
+      }
+    }
+  }
+}
+main #contacts {
+  padding: 0;
+}

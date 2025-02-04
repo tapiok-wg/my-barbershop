@@ -1,0 +1,99 @@
+.container {
+  padding: 84px 10px;
+  margin: 0 auto;
+  width: 100%;
+
+  @include min-mobile {
+    padding-left: 31px;
+    padding-right: 31px;
+    width: 480px;
+  }
+  @include min-tablet {
+    width: 768px;
+  }
+  @include min-desktop {
+    width: 1200px;
+    padding: 120px 15px;
+  }
+}
+
+.border {
+  // outline: 1px solid tomato;
+}
+
+.section-line {
+  display: block;
+  height: 1px;
+  width: 60px;
+  border-radius: 30px;
+  background-color: $mainColor;
+  &--light {
+    background-color: $textColorInherit;
+  }
+}
+
+.line {
+  flex-grow: 1;
+  border-bottom: 1px solid $mainColor;
+  margin: 5px;
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  padding: 12px 20px;
+  width: 160px;
+  height: 40px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  border-radius: 25px;
+  background-color: inherit;
+  text-transform: uppercase;
+  border: 1px solid $subColor;
+  color: #000;
+  cursor: pointer;
+  &--light {
+    color: #fff;
+  }
+  &:hover {
+    background-color: $subColor;
+    color: #fff;
+  }
+}
+
+.subtitle {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 14.98px;
+  margin-bottom: 20px;
+}
+
+.sosial {
+  &-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  &-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #fff;
+    &:hover .sosial-icon,
+    :focus .sosial-icon {
+      fill: $subColor;
+    }
+  }
+  &-icon {
+    width: 20px;
+    height: 20px;
+  }
+}

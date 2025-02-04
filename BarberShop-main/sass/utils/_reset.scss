@@ -1,0 +1,57 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 769px) {
+  /* Заховати scrollbar для Chrome, Safari та Opera */
+  html::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Заховати scrollbar для IE, Edge та Firefox */
+  html {
+    -ms-overflow-style: none; /* IE та Edge */
+    scrollbar-width: none; /* Firefox */
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #212121;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+button {
+  border: none;
+  outline: none;
+  text-decoration: none;
+}

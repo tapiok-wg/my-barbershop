@@ -1,0 +1,117 @@
+.is-hidden {
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+  &.header__modal {
+    transform: translateX(150%);
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+  transition: opacity $time $speed;
+  background-color: #00000047;
+  overflow-y: hidden;
+  & .container {
+    padding: 0;
+    position: relative;
+  }
+}
+
+.header__modal {
+  z-index: 555;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100vh;
+  transition: transform $time $speed;
+  border: 1px solid black;
+  background-color: #fff;
+  padding: 50px 31px;
+  @include min-mobile {
+    padding: 50px 40px;
+    right: 31px;
+  }
+  &-nav {
+    margin-bottom: 64px;
+  }
+  &-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  &-item {
+    font-size: 18px;
+    font-weight: 600;
+    & a:hover,
+    a:focus {
+      color: $subColor;
+    }
+  }
+  &-booking {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    margin-bottom: 69px;
+  }
+
+  &-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: inherit;
+    margin-left: auto;
+    margin-bottom: 30px;
+
+    &:hover {
+      scale: 1.1;
+    }
+    &-icon {
+      width: 35px;
+      height: 35px;
+      fill: #000;
+    }
+  }
+  &-box {
+    max-width: 400px;
+  }
+  &-footer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-wrap: wrap;
+    gap: 35px;
+    width: 168px;
+  }
+  &-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    &:hover {
+      color: $subColor;
+    }
+    &:focus {
+      color: $subColor;
+    }
+  }
+}
+.mobile-link {
+  font-size: 18px;
+  font-weight: 600;
+  width: auto;
+  color: #000;
+  &:hover {
+    color: $subColor;
+  }
+  &:focus {
+    color: $subColor;
+  }
+}

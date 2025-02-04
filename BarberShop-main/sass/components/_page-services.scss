@@ -1,0 +1,63 @@
+.services {
+  height: 100%;
+  background-image: url('../images/services-bg.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: $textColor;
+
+  &__wrapper {
+    opacity: 80%;
+    background-color: #111319;
+    height: 100%;
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    margin-bottom: 44px;
+  }
+  &__price-list {
+    background-image: linear-gradient(black, #171a24, #171a24ae);
+    padding: 15px 0;
+    margin-bottom: 44px;
+    @include min-mobile {
+      padding: 30px 40px;
+    }
+    @include min-desktop {
+      display: none;
+    }
+  }
+
+  &__price-desktop {
+    display: none;
+    @include min-desktop {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      & .services__price-list {
+        display: block;
+        width: 570px;
+      }
+    }
+  }
+
+  &__price-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 4px;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  & .btn {
+    margin: 0 auto;
+  }
+}
+
+main #services {
+  padding: 0;
+}
